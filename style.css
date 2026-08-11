@@ -176,6 +176,7 @@ img { max-width: 100%; height: auto; display: block; }
 .about-text p {
     margin-bottom: 1.5rem;
     max-width: 600px;
+    text-align: justify;
 }
 
 .about-social {
@@ -205,6 +206,14 @@ img { max-width: 100%; height: auto; display: block; }
     box-shadow: 0 4px 25px rgba(64, 112, 244, .35);
 }
 
+.about-email {
+    margin-top: 1rem;
+    color: var(--second-color);
+    font-weight: 500;
+    user-select: all;
+    cursor: text;
+}
+
 /* ===== ACHIEVEMENTS & EXPERIENCES ===== */
 .subsection-title {
     font-size: 1.2rem;
@@ -223,9 +232,12 @@ img { max-width: 100%; height: auto; display: block; }
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    align-items: stretch;
 }
 
 .achievement-card {
+    display: flex;
+    flex-direction: column;
     background-color: var(--light-bg);
     border-radius: .75rem;
     overflow: hidden;
@@ -246,7 +258,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 .achievement-card img {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    height: 220px;
     object-fit: cover;
 }
 
@@ -258,6 +270,7 @@ img { max-width: 100%; height: auto; display: block; }
 .achievement-text {
     margin: 0 1.25rem 1rem;
     color: #555;
+    flex-grow: 1;
 }
 
 .achievement-link {
@@ -273,6 +286,7 @@ img { max-width: 100%; height: auto; display: block; }
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    align-items: stretch;
 }
 
 .activity-card {
@@ -293,12 +307,15 @@ img { max-width: 100%; height: auto; display: block; }
 
 .activity-card img {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    height: 220px;
     object-fit: cover;
 }
 
 .activity-info {
     padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .activity-title {
@@ -309,6 +326,7 @@ img { max-width: 100%; height: auto; display: block; }
 .activity-text {
     color: #555;
     margin-bottom: .75rem;
+    flex-grow: 1;
 }
 
 .activity-link {
@@ -347,6 +365,7 @@ img { max-width: 100%; height: auto; display: block; }
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    align-items: stretch;
 }
 
 .project-card {
@@ -367,11 +386,16 @@ img { max-width: 100%; height: auto; display: block; }
 
 .project-card img {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    height: 220px;
     object-fit: cover;
 }
 
-.project-info { padding: 1.25rem; }
+.project-info {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
 
 .project-title {
     font-size: 1.1rem;
@@ -381,6 +405,7 @@ img { max-width: 100%; height: auto; display: block; }
 .project-text {
     color: #555;
     margin-bottom: .75rem;
+    flex-grow: 1;
 }
 
 .project-link {
@@ -413,6 +438,15 @@ img { max-width: 100%; height: auto; display: block; }
 
 .footer-icon { font-size: 1.5rem; }
 .footer-icon:hover { color: var(--first-color); }
+
+.footer-email {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    user-select: all;
+    cursor: text;
+}
 
 /* RESPONSIVE / MOBILE MENU */
 
