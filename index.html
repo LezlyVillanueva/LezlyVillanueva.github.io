@@ -3,11 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <h2>My name is Lezly Therese G. Villanueva</h2>
-    <h3>I'm a student at the University of the Immaculate Conception</h3>
+
+    <header class="l-header">
+        <nav class="nav">
+            <a href="#home" class="nav-logo">
+                Lezly Therese Villanueva
+            </a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#achievements" class="nav-link">Achievements & Experiences</a></li>
+                    <li class="nav-item"><a href="#activities" class="nav-link">Course Activities</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Skills & Projects</a></li>
+                </ul>
+            </div>
+
+            <label for="nav-toggle" class="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </label>
+        </nav>
+    </header>
+
+    <main class="l-main">
+
+        <!-- ============ HOME ============ -->
+        <section class="home" id="home">
+            <div class="home-data">
+                <h1 class="home-title">Hi, I'm <span class="home-title-color">Lezly Therese Villanueva</span></h1>
+                <a href="#about" class="button">About Me</a>
+            </div>
+
+            <div class="home-img">
+                <img src="images/winter.png" alt="Your profile picture">
+            </div>
+        </section>
+
+        <!-- ============ ABOUT ME ============ -->
+        <section class="about section" id="about">
+            <h2 class="section-title">About Me</h2>
+
+            <div class="about-container">
+                <div class="about-text">
+                    <p>
+                        Hi, I'm Lezly Therese G. Villanueva! 
+                        I'm an 18-year-old and a 2nd Year IT student at the University of the Immaculate Conception, working on the basics of coding. 
+                        Take a look around to see what I'm currently working on and learning.
+                    </p>
+
+                    <div class="about-social">
+                        <a href="https://github.com/LezlyVillanueva/LezlyVillanueva.github.io.git" class="social-button" target="_blank">
+                            <i class='bx bxl-github'></i> GitHub
+                        </a>
+                        <a href="https://www.facebook.com/lezlytherese.villanueva" class="social-button" target="_blank">
+                            <i class='bx bxl-facebook'></i> Facebook
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ ACHIEVEMENTS & EXPERIENCES ============ -->
+        <section class="achievements section" id="achievements">
+            <h2 class="section-title">Achievements & Experiences</h2>
+
+
+            <h3 class="subsection-title">Achievements</h3>
+            <div class="achievements-container">
+
+                <div class="achievement-card">
+                    <img src="images/ibm.png" alt="Achievement proof">
+                    <h4 class="achievement-title">Introduction to Artificial Intelligence (AI) – IBM</h4>
+                    <p class="achievement-text">
+                        Completed a course authorized by IBM covering the fundamentals of AI concepts, machine learning, and real-world applications.
+                    </p>
+                    <a href="https://coursera.org/share/f8265930b8bcb94d1eb033210c5dfe26" class="achievement-link" target="_blank">View proof</a>
+                </div>
+
+                <div class="achievement-card">
+                    <img src="images/googlecloud.png" alt="Achievement proof">
+                    <h4 class="achievement-title">Introduction to Generative AI – Google Cloud</h4>
+                    <p class="achievement-text">
+                        Completed a course authorized by Google Cloud exploring core generative AI concepts, large language models, and cloud AI tools.
+                    </p>
+                    <a href="https://coursera.org/share/408967dec09a66b75267a55869559cc8" class="achievement-link" target="_blank">View proof</a>
+                </div>
+
+                <div class="achievement-card">
+                    <img src="images/deeplearningAI.png" alt="Achievement proof">
+                    <h4 class="achievement-title">AI For Everyone – DeepLearning.AI</h4>
+                    <p class="achievement-text">
+                        Completed a course authorized by DeepLearning.AI covering practical AI terminology, project workflow, and business integration.
+                    </p>
+                    <a href="https://coursera.org/share/6fb554f9a01e57057289c61120484b38" class="achievement-link" target="_blank">View proof</a>
+                </div>
+                
+                <div class="achievement-card no-photo">
+                    <img src="images/achievement.png" alt="Achievement proof">
+                    <h4 class="achievement-title">Competent in Computer System Servicing</h4>
+                    <p class="achievement-text">
+                        wip
+                    </p>
+                </div>
+
+            </div>
+
+            <h3 class="subsection-title">Experiences</h3>
+            <div class="achievements-container">
+
+                <div class="achievement-card">
+                    <img src="images/vibe.png" alt="Experience photo">
+                    <h4 class="achievement-title">VIBE Core Member</h4>
+                    <p class="achievement-text">
+                        Served as a VIBE Core Member from 2025 to 2026, actively supporting organizational events, booth operations, and team initiatives.
+                    </p>
+                </div>
+
+                <div class="achievement-card no-photo">
+                    <img src="images/experience1.jpg" alt="Experience photo">
+                    <h4 class="achievement-title">Work Immersion Trainee at Holy Cross of Sasa</h4>
+                    <p class="achievement-text">
+                        Completed an 80-hour work immersion at Holy Cross of Sasa. Responsible for fixing printers, CCTVs, and Wi-Fi networks, maintaining computer labs, and cleaning aircon units.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ============ COURSE ACTIVITIES ============ -->
+        <section class="activities section" id="activities">
+            <h2 class="section-title">Course Activities</h2>
+
+            <div class="activities-container">
+
+                <div class="activity-card">
+                    <img src="images/fashionblog.png" alt="Fashion Blog screenshot">
+                    <div class="activity-info">
+                        <h3 class="activity-title">HTML Activity 1.1: Fashion Blog</h3>
+                        <p class="activity-text">Focuses on standard HTML markup, logical document hierarchy, text formatting, and media integration.</p>
+                        <a href="https://lezlyvillanueva.github.io/FashionBlog/" class="activity-link" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <img src="images/winefestival.png" alt="Wine Festival Schedule screenshot">
+                    <div class="activity-info">
+                        <h3 class="activity-title">HTML Activity 1.2: Wine Festival Schedule</h3>
+                        <p class="activity-text">Highlights advanced HTML table design, timetable formatting, and organizing structured content.</p>
+                        <a href="https://LezlyVillanueva.github.io/WineSched/" class="activity-link" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <img src="images/daviesburger.png" alt="Davies Burger screenshot">
+                    <div class="activity-info">
+                        <h3 class="activity-title">HTML Activity 2.2: Davies Burger</h3>
+                        <p class="activity-text">Focuses on applying CSS styles, Flexbox positioning, custom color palettes, and typography to build a restaurant landing page.</p>
+                        <a href="https://lezlyvillanueva.github.io/DaviesBurger/index.html" class="activity-link" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ PROJECTS & SKILLS ============ -->
+        <section class="projects section" id="projects">
+            <h2 class="section-title">Projects & Skills</h2>
+
+            <div class="skills-list">
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Java</li>
+                    <li>Figma</li>
+                    <li>Canva</li>
+                </ul>
+            </div>
+
+            <h3 class="subsection-title">Projects</h3>
+            <div class="projects-container">
+
+                <div class="project-card">
+                    <img src="images/learnly.png" alt="Project screenshot">
+                    <div class="project-info">
+                        <h3 class="project-title">Learnly - HCI Prototype</h3>
+                        <p class="project-text">wip</p>
+                        <a href="https://www.figma.com/proto/GzlPKAAj6gmQI9Nme2gtFo/G13-INTERACTIVE-PROTOTYPE?node-id=383-76&p=f&t=5aXgWhQd7CCSkfpq-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=383%3A76&show-proto-sidebar=1" class="project-link" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/project1.jpg" alt="Project screenshot">
+                    <div class="project-info">
+                        <h3 class="project-title">Project Title</h3>
+                        <p class="project-text">wip</p>
+                        <a href="#" class="project-link" target="_blank">View Project</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <p class="footer-title">Lezly Therese Villanueva</p>
+
+        <div class="footer-social">
+            <a href="https://github.com/LezlyVillanueva/LezlyVillanueva.github.io.git" class="footer-icon" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.facebook.com/lezlytherese.villanueva" class="footer-icon" target="_blank"><i class='bx bxl-facebook'></i></a>
+        </div>
+
+        <p>&#169; 2026 Copyright all rights reserved</p>
+    </footer>
+
 </body>
 </html>
