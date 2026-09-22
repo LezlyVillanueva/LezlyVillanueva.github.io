@@ -3,39 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Markdown to HTML Converter</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header class="hero">
-        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
-            <h1 style="margin:0;">Markdown to HTML Converter</h1>
-            <button class="pill-btn" id="clear-btn">Clear input</button>
+    <h1>Markdown to HTML Converter</h1>
+    <div id="container">
+        <div class="container">
+            <h2>Markdown Input:</h2>
+            <textarea id="markdown-input" placeholder="Enter your markdown here..."></textarea>
         </div>
-    </header>
-
-    <main>
-        <div class="panels">
-            <div class="panel">
-                <h2>Markdown Input</h2>
-                <textarea id="markdown-input" placeholder="Enter your markdown here..."></textarea>
-            </div>
-            <div class="panel">
-                <h2>Raw HTML Output</h2>
-                <div id="html-output"></div>
-            </div>
-            <div class="panel">
-                <h2>Live Preview</h2>
-                <div id="preview"></div>
-            </div>
+        <div class="container">
+            <h2>Raw HTML Output:</h2>
+            <div id="html-output"></div>
         </div>
-    </main>
-
+        <div class="container">
+            <h2>HTML Preview:</h2>
+            <div id="preview"></div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
