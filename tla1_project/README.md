@@ -6,7 +6,7 @@ A modular React application refactored from a Vanilla JavaScript DOM ledger into
 
 ## Submission Links
 - **GitHub Repository**: `https://github.com/LezlyVillanueva/LezlyVillanueva.github.io.git`
-
+- **Vercel Live Deployment**: `https://react-income-ledger-sigma.vercel.app/`
 ---
 
 ## Highlights of Added Functional & UI Enhancements
